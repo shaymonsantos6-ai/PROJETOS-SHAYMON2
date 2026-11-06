@@ -28,3 +28,13 @@ Galeria real da maquete, formulário de contato, GSAP/Lenis/Recharts, Playwright
 
 ## Layout da maquete
 A disposição do aeródromo segue a foto de referência da maquete: pista à direita com cabeceiras 27/09, rede de táxi em "Y" (Alfa e Bravo) levando ao pátio principal pelo táxi Charlie, pátio norte, dois hangares arqueados, galpão de dentes de serra, oficina, terminal, torre, prédios administrativos, estacionamento, portarias e cerca com portões. Dimensões e designações são **hipotéticas** (ajuste em `lib/dados.ts`). O botão **Visão: maquete/real** alterna entre a base preta com mesa de madeira e o ambiente completo. O modo jogo usa sempre a visão real.
+
+
+## Publicar no GitHub Pages
+1. Crie um repositório chamado **aeroporto-os-tchutchucos** no GitHub.
+2. Envie todos os arquivos desta pasta para a branch `main` (incluindo a pasta `.github`).
+3. No repositório, abra **Settings → Pages** e selecione **GitHub Actions** em *Build and deployment*.
+4. Aguarde a execução da ação **Publicar no GitHub Pages** na aba **Actions**.
+5. O site ficará disponível em `https://SEU-USUARIO.github.io/aeroporto-os-tchutchucos/`.
+
+O workflow gera automaticamente a versão estática em `out/`. Para executar localmente, os comandos originais `npm run dev` e `npm run build` continuam disponíveis.
